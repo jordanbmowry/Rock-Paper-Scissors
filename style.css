@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: Asap, Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: #fffffe;
+}
+
+header {
+	background-color: #00214d;
+	color: #f1f1f1;
+	padding: 2.5rem;
+}
+
+header > h1 {
+	text-align: center;
+}
+
+.score-board {
+	margin: 1.3rem auto;
+	border: 0.2rem solid #ff5470;
+	width: 25rem;
+	color: #1b2d45;
+	font-size: 3.5rem;
+	border-radius: 0.3rem;
+	text-align: center;
+	padding: 1rem 1.3rem;
+	position: relative;
+}
+
+.badge {
+	background-color: #fde24f;
+	color: #00214d;
+	font-size: 1rem;
+	padding: 0.1rem 0.8rem;
+}
+
+#user-label {
+	position: absolute;
+	top: 35px;
+	left: -27px;
+}
+#computer-label {
+	position: absolute;
+	top: 35px;
+	right: -50px;
+}
+
+.result {
+	font-size: 3rem;
+	color: #1b2d45;
+}
+
+.result > p {
+	text-align: center;
+	font-weight: bold;
+}
+
+.choices {
+	margin: 4rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.choice {
+	display: flex;
+	border: 4px solid #00214d;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5rem;
+	background-color: #00ebc7;
+	margin: 0 1.5rem;
+	transition: all 0.3s ease;
+}
+
+.choice:hover {
+	cursor: pointer;
+	opacity: 75%;
+}
+
+.choice:active {
+	transform: translateY(1px);
+}
+
+i {
+	font-size: 7.5rem;
+	color: #00214d;
+}
+
+#action-msg {
+	text-align: center;
+	color: #1b2d45;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.green-glow {
+	border: 0.5rem solid #4bb543;
+	box-shadow: 0 0 10px #43a03c;
+}
+
+.red-glow {
+	border: 0.5rem solid #fc121b;
+	box-shadow: 0 0 10px #d00115;
+}
+
+.gray-glow {
+	border: 0.5rem solid #464647;
+	box-shadow: 0 0 10px #36393a;
+}
+
+.hidden {
+	display: none;
+}
